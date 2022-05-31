@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div>[Windows : Alt + Accesskey]-----[Mac : ctrl + Opt + Accesskey]</div>
+    <p>Accessibility</p>
+
+    <section>
+        <div>Press "Tab" for Access Navigation-Bar</div>
+        <nav>
+            <ul class="menuItems">
+                <li>
+                    <a href="https://www.google.com/" id="home" accesskey="h" class="tooltip">Home
+                        <audio id="home1" controls style="display:none">
+                            <source src="./Audio_Files/Home.mp3" type="audio/mpeg"> Your browser does not support the
+                            audio element.
+                        </audio>
+                        <span class="tooltiptext">Accesskey = h</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="about" accesskey="a" class="tooltip">About
+                        <audio id="about1" controls style="display:none">
+                            <source src="./Audio_Files/About.mp3" type="audio/mpeg"> Your browser does not support the
+                            audio element.
+                        </audio>
+                        <span class="tooltiptext">Accesskey = a</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="project" accesskey="p" class="tooltip">Projects
+                        <audio id="project1" controls style="display:none">
+                            <source src="./Audio_Files/Projects.mp3" type="audio/mpeg"> Your browser does not support
+                            the audio element.
+                        </audio>
+                        <span class="tooltiptext">Accesskey = p</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="blog" accesskey="b" class="tooltip">Blog
+                        <audio id="blog1" controls style="display:none">
+                            <source src="./Audio_Files/Blog.mp3" type="audio/mpeg"> Your browser does not support the
+                            audio element.
+                        </audio>
+                        <span class="tooltiptext">Accesskey = b</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="contact" accesskey="c" class="tooltip">Contact
+                        <audio id="contact1" controls style="display:none">
+                            <source src="./Audio_Files/Contact.mp3" type="audio/mpeg"> Your browser does not support the
+                            audio element.
+                        </audio>
+                        <span class="tooltiptext">Accesskey = c</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+</body>
+
+</html>
