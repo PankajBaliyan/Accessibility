@@ -1,39 +1,37 @@
+//Capture key code and perform certain tasks.
 document.addEventListener("keydown", function (event) {
     let code = `${event.keyCode} `;
     if (code == 72) {
-        document.getElementById('home1').play();
-        document.getElementById("home").style.textDecoration = "underline";
-        document.getElementById("about").style.textDecoration = "none";
-        document.getElementById("project").style.textDecoration = "none";
-        document.getElementById("blog").style.textDecoration = "none";
-        document.getElementById("contact").style.textDecoration = "none";
+        underlineText("home");
     } else if (code == 65) {
-        document.getElementById("about1").play();
-        document.getElementById("about").style.textDecoration = "underline";
-        document.getElementById("home").style.textDecoration = "none";
-        document.getElementById("project").style.textDecoration = "none";
-        document.getElementById("blog").style.textDecoration = "none";
-        document.getElementById("contact").style.textDecoration = "none";
+        underlineText("about");
     } else if (code == 80) {
-        document.getElementById("project1").play();
-        document.getElementById("project").style.textDecoration = "underline";
-        document.getElementById("home").style.textDecoration = "none";
-        document.getElementById("about").style.textDecoration = "none";
-        document.getElementById("blog").style.textDecoration = "none";
-        document.getElementById("contact").style.textDecoration = "none";
+        underlineText("project");
     } else if (code == 66) {
-        document.getElementById("blog1").play();
-        document.getElementById("blog").style.textDecoration = "underline";
-        document.getElementById("home").style.textDecoration = "none";
-        document.getElementById("about").style.textDecoration = "none";
-        document.getElementById("project").style.textDecoration = "none";
-        document.getElementById("contact").style.textDecoration = "none";
+        underlineText("blog");
     } else if (code == 67) {
-        document.getElementById("contact1").play();
-        document.getElementById("contact").style.textDecoration = "underline";
-        document.getElementById("home").style.textDecoration = "none";
-        document.getElementById("about").style.textDecoration = "none";
-        document.getElementById("project").style.textDecoration = "none";
-        document.getElementById("blog").style.textDecoration = "none";
+        underlineText("contact");
     }
 })
+
+//Function to perform certain tasks, according to provided ID.
+function underlineText(selected_Id) {
+    
+    //Variable used to perform styling.
+    let working_ID = selected_Id;
+    
+    //Variable used to play sound.
+    let play_ID = selected_Id.concat("1");
+    
+    //Array of all ID's
+    const allId = ["home","about","project","blog","contact"];
+
+    for(let i = 0 ; i < 5 ; i ++) {
+        if(working_ID == allId[i]) {
+            document.getElementById(`${working_ID}`).style.textDecoration = "underline";
+            document.getElementById(`${play_ID}`).play();
+        } else {
+            document.getElementById(`${allId[i]}`).style.textDecoration = "none";
+        }
+    }
+};
