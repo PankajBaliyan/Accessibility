@@ -8,14 +8,15 @@
     <title>Accessibility</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+
 </head>
 
 <body>
-    <div>[Windows : Alt + Accesskey]-----[Mac : ctrl + Opt + Accesskey]</div>
-    <p>Accessibility</p>
+    <div class="info">[Windows : Alt + Accesskey]-----[Mac : ctrl + Opt + Accesskey]</div>
+    <p id="mainWord">Accessibility</p>
 
     <section>
-        <div>Press "Tab" for Access Navigation-Bar</div>
+        <div class="info">Press "Tab" for Access Navigation-Bar</div>
         <nav>
             <ul class="menuItems">
                 <li>
@@ -66,6 +67,18 @@
             </ul>
         </nav>
     </section>
+    <span class="auto_typed"></span>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto_typed", {
+            strings: ["By Pankaj"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+
 </body>
 
 </html>
