@@ -28,11 +28,8 @@ function focusedElement(selected_Id) {
 
     for(let i = 0 ; i < 5 ; i ++) {
         if(working_ID == allId[i]) {
-            // document.getElementById(`${working_ID}`).style.textDecoration = "underline";
             document.getElementById(`${working_ID}`).focus();
             document.getElementById(`${play_ID}`).play();
-        } else {
-            // document.getElementById(`${allId[i]}`).style.textDecoration = "none";
         }
     }
 };
