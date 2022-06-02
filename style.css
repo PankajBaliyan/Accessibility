@@ -12,12 +12,12 @@ body {
   font-family: Hack, monospace;
 }
 
-div {
+.info {
   color: #727272;
   text-align: center;
 }
 
-p {
+#mainWord {
   margin: 16px;
   font-size: 96px;
   color: #ccc;
@@ -25,6 +25,9 @@ p {
   font-weight: 600;
   transition: all 1s ease-in-out;
   position: relative;
+  background: -webkit-linear-gradient(rgb(116, 113, 241), rgb(241, 130, 130));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -50,12 +53,12 @@ a {
   transition: all 0.5s ease-in-out;
   position: relative;
   text-transform: uppercase;
+  padding: 10px;
 }
 
 .tooltip{
   position: relative;
   display: inline-block;
-  /* border-bottom: 1px dotted black; */
 }
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -68,15 +71,22 @@ a {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-
-  /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  font-size: 14px;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
-span{
-  font-size: 14px;
+.auto_typed{
+  font-size: 30px;
+  color: #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 1s ease-in-out;
+  position: relative;
+  background: -webkit-linear-gradient(rgb(194, 233, 19), rgb(240, 14, 14));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

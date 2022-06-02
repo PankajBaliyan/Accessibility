@@ -2,20 +2,20 @@
 document.addEventListener("keydown", function (event) {
     let code = `${event.keyCode} `;
     if (code == 72) {
-        underlineText("home");
+        focusedElement("home");
     } else if (code == 65) {
-        underlineText("about");
+        focusedElement("about");
     } else if (code == 80) {
-        underlineText("project");
+        focusedElement("project");
     } else if (code == 66) {
-        underlineText("blog");
+        focusedElement("blog");
     } else if (code == 67) {
-        underlineText("contact");
+        focusedElement("contact");
     }
 })
 
 //Function to perform certain tasks, according to provided ID.
-function underlineText(selected_Id) {
+function focusedElement(selected_Id) {
     
     //Variable used to perform styling.
     let working_ID = selected_Id;
@@ -28,10 +28,11 @@ function underlineText(selected_Id) {
 
     for(let i = 0 ; i < 5 ; i ++) {
         if(working_ID == allId[i]) {
-            document.getElementById(`${working_ID}`).style.textDecoration = "underline";
+            // document.getElementById(`${working_ID}`).style.textDecoration = "underline";
+            document.getElementById(`${working_ID}`).focus();
             document.getElementById(`${play_ID}`).play();
         } else {
-            document.getElementById(`${allId[i]}`).style.textDecoration = "none";
+            // document.getElementById(`${allId[i]}`).style.textDecoration = "none";
         }
     }
 };
