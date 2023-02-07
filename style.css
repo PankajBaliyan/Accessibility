@@ -1,7 +1,9 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -45,21 +47,26 @@ li {
   margin: 50px;
 }
 
-a {
+span {
   text-decoration: none;
   color: #8f8f8f;
   font-size: 24px;
   font-weight: 400;
-  transition: all 0.5s ease-in-out;
+  /* transition: all 0.5s ease-in-out; */
   position: relative;
   text-transform: uppercase;
   padding: 10px;
 }
 
-.tooltip{
+.tooltip {
   position: relative;
   display: inline-block;
 }
+
+.tooltip::first-letter {
+  text-decoration: underline;
+}
+
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -72,21 +79,36 @@ a {
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  z-index: 1;
+  z-index: 999;
   font-size: 14px;
 }
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
 
-.auto_typed{
+.auto_typed {
   font-size: 30px;
   color: #ccc;
   text-transform: uppercase;
   font-weight: 600;
   transition: all 1s ease-in-out;
-  position: relative;
+  position: absolute;
+  bottom: 10%;
   background: -webkit-linear-gradient(rgb(194, 233, 19), rgb(240, 14, 14));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.border {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+span:focus-visible {
+  outline: none;
+  /* border: 10px solid black;
+  border-radius: 5px;
+  padding: 5px; */
 }
