@@ -5,69 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accessibility</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Images/favicon.ico">
+    <title>Accessibility</title>
 
 </head>
 
 <body>
-    <div class="info">[Windows : Alt + Accesskey]<br><br><br>[Mac : ctrl + Opt + Accesskey]<br><br><br>[Press the underlined character]</div>
     <p id="mainWord">Accessibility</p>
+    <h1>Button Audio Playback</h1>
+    <div class="info">[Windows : Alt + Accesskey]<br><br><br>
+        [Mac : ctrl + Opt + Accesskey]<br><br><br>
+        [Press the underlined character || Tab Key]</div>
 
-    <section>
-        <div class="info">Note : "Tab" functionality removed</div>
-        <nav>
-            <ul class="menuItems">
-                <li>
-                    <span id="home" accesskey="h" class="tooltip" tabindex="0">Home
-                        <audio id="home1">
-                            <source src="./Audio_Files/Home.mp3" type="audio/mpeg"> Your browser does not support the
-                            audio element.
-                        </audio>
-                        <span class="tooltiptext">Accesskey = h</span>
-                    </span>
-                </li>
-                <li>
-                    <span id="about" accesskey="a" class="tooltip" tabindex="0">About
-                        <audio id="about1">
-                            <source src="./Audio_Files/About.mp3" type="audio/mpeg"> Your browser does not support the
-                            audio element.
-                        </audio>
-                        <span class="tooltiptext">Accesskey = a</span>
-                    </span>
-                </li>
-                <li>
-                    <span id="project" accesskey="p" class="tooltip" tabindex="0">Projects
-                        <audio id="project1">
-                            <source src="./Audio_Files/Projects.mp3" type="audio/mpeg"> Your browser does not support
-                            the audio element.
-                        </audio>
-                        <span class="tooltiptext">Accesskey = p</span>
-                    </span>
-                </li>
-                <li>
-                    <span id="blog" accesskey="b" class="tooltip" tabindex="0">Blog
-                        <audio id="blog1">
-                            <source src="./Audio_Files/Blog.mp3" type="audio/mpeg"> Your browser does not support the
-                            audio element.
-                        </audio>
-                        <span class="tooltiptext">Accesskey = b</span>
-                    </span>
-                </li>
-                <li>
-                    <span id="contact" accesskey="c" class="tooltip" tabindex="0">Contact
-                        <audio id="contact1">
-                            <source src="./Audio_Files/Contact.mp3" type="audio/mpeg"> Your browser does not support the
-                            audio element.
-                        </audio>
-                        <span class="tooltiptext">Accesskey = c</span>
-                    </span>
-                </li>
-            </ul>
-        </nav>
+    <section class="section-btn">
+        <button type="button" class="button1" accesskey="h" aria-label="Home" id="home">Home</button>
+        <button type="button" class="button2" accesskey="a" aria-label="About" id="about">About</button>
+        <button type="button" class="button3" accesskey="p" aria-label="Projects" id="project">Projects</button>
+        <button type="button" class="button4" accesskey="b" aria-label="Blog" id="blog">Blog</button>
+        <button type="button" class="button5" accesskey="c" aria-label="Contact" id="contact">Contact</button>
     </section>
+
     <span id="text" class="auto_typed"></span>
 
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <script src="./script.js"></script>
 
 </body>
