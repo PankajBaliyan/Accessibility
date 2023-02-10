@@ -17,6 +17,7 @@ body {
 .info {
   color: #727272;
   text-align: center;
+  margin: 3rem;
 }
 
 #mainWord {
@@ -32,61 +33,7 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-nav {
-  margin: 25px;
-  background: #f9f9f9;
-  padding: 16px;
-}
-
-.menuItems {
-  list-style: none;
-  display: flex;
-}
-
-li {
-  margin: 50px;
-}
-
-span {
-  text-decoration: none;
-  color: #8f8f8f;
-  font-size: 24px;
-  font-weight: 400;
-  /* transition: all 0.5s ease-in-out; */
-  position: relative;
-  text-transform: uppercase;
-  padding: 10px;
-}
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip::first-letter {
-  text-decoration: underline;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 999;
-  font-size: 14px;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
+/* typing effect  */
 .auto_typed {
   font-size: 30px;
   color: #ccc;
@@ -100,15 +47,25 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
-.border {
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 5px;
+/* * Button Styling Start */
+
+button {
+  color: #8f8f8f;
+  font-size: 24px;
+  padding: 10px 50px;
+  border: none;
 }
 
-span:focus-visible {
-  outline: none;
-  /* border: 10px solid black;
-  border-radius: 5px;
-  padding: 5px; */
+button::first-letter{
+  text-decoration: underline;
+}
+
+button:focus-visible{
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+/* ! Button Styling End */
+
+.button-outline{
+  outline: -webkit-focus-ring-color auto 5px;
 }
