@@ -46,7 +46,7 @@ You can test <ins>Accessibility</ins> in many ways, which is mention below 👇<
 
 ## Authors
 
-- [@pankajkumar90](https://www.github.com/pankajkumar90)
+- [@PankajBaliyan](https://www.github.com/PankajBaliyan)
 
 
 ## Contributing
@@ -61,7 +61,7 @@ Please adhere to this project's `code of conduct`.
 ## Demo
 https://accessibility-cwp.vercel.app
 <br><br>
-https://pankajkumar90.github.io/Accessibility/
+https://PankajBaliyan.github.io/Accessibility/
 
 
 ## Feedback
@@ -82,7 +82,7 @@ I learned many things while making this repository, i.e. how to make web accessi
 Clone the project
 
 ```bash
-  git clone https://pankajkumar90.github.io/Accessibility/
+  git clone https://PankajBaliyan.github.io/Accessibility/
 ```
 
 Go to the project directory
