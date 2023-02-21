@@ -5,28 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="shortcut icon" href="./Images/favicon.ico">
     <title>Accessibility</title>
 
 </head>
 
 <body>
-    <p id="mainWord">Accessibility</p>
-    <h1>Button Audio Playback</h1>
-    <div class="info">[Windows : Alt + Accesskey]<br><br><br>
-        [Mac : ctrl + Opt + Accesskey]<br><br><br>
-        [Press the underlined character || Tab Key]</div>
+    <main>
+        <p id="mainWord">Accessibility</p>
+        <h1>Button Audio Playback</h1>
+        <div class="info">[Windows : Alt + Accesskey]<br><br><br>
+            [Mac : ctrl + Opt + Accesskey]<br><br><br>
+            [Press the underlined character || Tab Key]</div>
 
-    <section class="section-btn">
-        <button type="button" class="button1" accesskey="h" aria-label="Home" id="home">Home</button>
-        <button type="button" class="button2" accesskey="a" aria-label="About" id="about">About</button>
-        <button type="button" class="button3" accesskey="p" aria-label="Projects" id="project">Projects</button>
-        <button type="button" class="button4" accesskey="b" aria-label="Blog" id="blog">Blog</button>
-        <button type="button" class="button5" accesskey="c" aria-label="Contact" id="contact">Contact</button>
-    </section>
+        <section class="section-btn">
+            <button type="button" class="button1" accesskey="h" aria-label="Home" id="home">Home</button>
+            <button type="button" class="button2" accesskey="a" aria-label="About" id="about">About</button>
+            <button type="button" class="button3" accesskey="p" aria-label="Projects" id="project">Projects</button>
+            <button type="button" class="button4" accesskey="b" aria-label="Blog" id="blog">Blog</button>
+            <button type="button" class="button5" accesskey="c" aria-label="Contact" id="contact">Contact</button>
+        </section>
 
-    <span id="text" class="auto_typed"></span>
+        <span id="text" class="auto_typed"></span>
+
+    </main>
 
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
