@@ -17,7 +17,7 @@ You can test <ins>Accessibility</ins> in many ways, which is mention below 👇<
  _______________
 <b>********** 1st Way **********</b><br>
  you can simply <b>hover</b> over the element you will see a <b>tooltip</b> of access key. You have to just <b>press</b> that key & see the magic.<br>
- 
+
  Home 👉 <b>H</b><br>
  About 👉 <b>A</b><br>
  Blog 👉 <b>B</b><br>
